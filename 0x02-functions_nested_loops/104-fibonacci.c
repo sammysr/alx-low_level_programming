@@ -6,7 +6,7 @@
  * followed by a new line
  * Return: Always 0
  */
-int main(void);
+int main(void)
 {
 unsigned long int i, j, k, j1, j2, k1, k2;
 j = 1;
