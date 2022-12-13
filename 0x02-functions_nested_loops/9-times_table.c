@@ -7,7 +7,7 @@ void times_table(void)
 {
 	int v, h;
 
-	for (h = 0 ; < 10 ; h++)
+	for (h = 0 ; h < 10 ; h++)
 	{
 		_putchar('0');
 		for (v = 1 ; v < 10 ; v++)
