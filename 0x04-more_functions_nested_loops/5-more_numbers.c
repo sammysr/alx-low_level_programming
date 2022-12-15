@@ -23,7 +23,7 @@ else
 {
 changer = 1;
 }
-_putchar(changer + '0';
+_putchar(changer + '0');
 if (i > 9)
 {
 _putchar(id + '0');
