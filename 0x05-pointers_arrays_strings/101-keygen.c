@@ -7,17 +7,18 @@
  */
 int main(void)
 {
-	int p, s;
+	int r = 0, c = 0;
+	time_t t;
 
-	srand(time(NULL));
-	s = 0;
-	while (s <= 2645)
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		p = (rand() % 28);
-		s += p;
-		printf("%c", p);
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-	printf("%c", 2772 - sum);
-
+	printf("%c\n", (2772 - c));
 	return (0);
 }
