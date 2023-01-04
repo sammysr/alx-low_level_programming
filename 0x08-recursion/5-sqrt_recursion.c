@@ -1,5 +1,4 @@
-#includ "main.h"
-
+#include "main.h"
 /**
  *comparar - function that returns the power of number
  *@n: original number
