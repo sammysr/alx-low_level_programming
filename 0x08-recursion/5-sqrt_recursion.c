@@ -1,37 +1,31 @@
 #includ "main.h"
 
 /**
- * helperFunction - checks if sqrt of number exists
- * @num: number.
- * @pSqrt: poissible sqrt of number.
+ *comparar - function that returns the power of number
+ *@n: original number
+ *@y: counter to compare multiplication
  *
- * Return: sqrt of number ot -1 for error.
+ *Return: square root
  */
-int helperFunction(int num, int pSqrt)
+int comparar(int n, int y)
 {
-	if ((pSqrt * pSqrt) == num)
+	if (y * y == n)
 	{
-		return (pSqrt);
+		return (y);
 	}
-	else
+	else if (y * y > n)
 	{
-		if ((pSqrt * pSqrt) > num)
-			return (-1);
-		else
-			return (helperFunction(num, pSqrt + 1));
-	}
-}
+		return (-1);
 
+	}
+	return (comparar(n, y + 1));
+}
 /**
- * _sqrt_recursion - returns the natural square root of a number.
- * @n: number to find sqrt of.
- * Return: squareroot of n.
- * -1 if n does not have a natural sqrt.
- */
+*_sqrt_recursion - function that returns the power of number
+*@n: number
+*Return: the natural square root
+*/
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	else
-		return (helperFunction(n, 0));
+	return (comparar(n, 1));
 }
